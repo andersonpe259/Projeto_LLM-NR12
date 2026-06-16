@@ -1,0 +1,38 @@
+# ============================================================
+# requirements.txt — Dependências do Laboratório ChatGPT Clone
+# ============================================================
+# Instale com: pip install -r requirements.txt
+#
+# Versões mínimas recomendadas para o laboratório.
+# Em ambiente de produção, fixe as versões exatas.
+# ============================================================
+
+# --- Framework Web ---
+# FastAPI: framework moderno e assíncrono para APIs Python
+fastapi>=0.110.0
+
+# Uvicorn: servidor ASGI para rodar o FastAPI
+# [standard] inclui suporte a WebSockets e reload automático
+uvicorn[standard]>=0.29.0
+
+# --- Modelos de Linguagem (HuggingFace) ---
+# transformers: biblioteca principal para carregar modelos pre-treinados
+transformers>=4.40.0
+
+# PyTorch: framework de deep learning (CPU)
+# Para GPU com CUDA, veja: https://pytorch.org/get-started/locally/
+torch>=2.2.0
+
+# aceleração opcional de transformers
+accelerate>=0.29.0
+
+# --- Validação de Dados ---
+# Pydantic v2: validação de schemas das requisições/respostas da API
+pydantic>=2.0.0
+
+# --- Utilitários ---
+# python-multipart: necessário para upload de arquivos (opcional)
+python-multipart>=0.0.9
+
+# sentencepiece: tokenizadores baseados em SentencePiece (alguns modelos HF)
+sentencepiece>=0.2.0
